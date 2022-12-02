@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>YM contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="json.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="bio.html">About</a></li>
+        <li> <a href="projects.html">Projects</a></li>
+        <li> <a href="resume.html">Resume</a></li>
+        <li><a href="contact.html"  id="current-page">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="contactWrapper">
+      <div>
+          <p class="contact">Contact me</p>
+
+          <div class="container">
+              <form onsubmit="return validate()" action="contact.html" name="contact_form">
+              <div class="row">
+                <div class="col-25">
+                  <label for="name">Name</label>
+                </div>
+                <div class="col-75">
+                  <input aria-labelledby="input_name" type="text" id="name" name="yourname" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="gmail">Gmail</label>
+                </div>
+                <div class="col-75">
+                  <input aria-labelledby="input_gmail" type="text" id="gmail" name="yourgmail" placeholder="Your Email. End with @gmail">
+                </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-25">
+                    <label for="role">Role</label>
+                  </div>
+                  <div class="col-together">
+                      <div>
+                          <input type="radio" id="stu" name="role" value="student" aria-labelledby="choice_role_student">
+                          <label class="special-white" for="stu">Student</label><br>
+                      </div>
+                      <div>
+                          <input type="radio" id="professional" name="role" value="prof" aria-labelledby="choice_role_prof">
+                          <label class="special-white" for="professional">Employer</label><br>
+                      </div>
+
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country" aria-labelledby="choice_country">
+                      <option value="CountryName">USA</option>
+                      <option value="CountryName">UK</option>
+                      <option value="CountryName">Canada</option>
+                      <option value="CountryName">China</option>
+                      <option value="CountryName">Others</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Comments</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="Content" name="subject" placeholder="Your comments here..." aria-labelledby="input_comment"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit" onclick="" aria-labelledby="botton_submit">
+              </div>
+              </form>
+            </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="stickBottom">
+          <div class="contact-together">
+              <a>
+                  <i id="contact-icon" class="material-icons">email</i>
+              </a>
+              <p class="contactInfo">YuqiMa2024@u.northwestern.edu</p>
+          </div>
+
+          <div class="contact-together">
+              <a>
+                  <i id="contact-icon" class="material-icons">voicemail</i>
+              </a>
+              <p class="contactInfo">+1 847 521 8452</p>
+          </div>
+
+          <div class="contact-together">
+              <a>
+                  <i id="contact-icon" class="material-icons">place</i>
+              </a>
+              <p class="contactInfo">1915 Maple Ave, Evanston, IL, USA 60201</p>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
